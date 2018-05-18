@@ -1,15 +1,15 @@
-import {Button} from "antd";
+import { Button } from "antd";
 import * as React from "react";
-import {hot} from "react-hot-loader";
-import {renderRoutes} from "react-router-config";
-import {Link} from "react-router-dom";
-import "./App.css";
+import { hot } from "react-hot-loader";
+import { renderRoutes } from "react-router-config";
+import { Link } from "react-router-dom";
+import * as s from "./index.css";
 import logoSvg from "./logo.svg";
 
 class App extends React.Component<any, {}> {
   public render() {
     return (
-      <div className="App">
+      <div className={s.title}>
         <header className="App-header">
           <img src={logoSvg} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React!</h1>
